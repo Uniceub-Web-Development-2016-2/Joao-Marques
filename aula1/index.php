@@ -1,9 +1,12 @@
 <?php
 
-$txt = 'Olha ai meu fio';
 
-if ($txt > 6){
-echo "Olha ai meu fio";
+
+echo 'Olha';
+
+$var = 'Olha ai doido';
+$lenght = strlen($var);
+if ($lenght > 6){
+echo $var;
 }else
-
-?>
+echo 'qqçs3eaoi';
