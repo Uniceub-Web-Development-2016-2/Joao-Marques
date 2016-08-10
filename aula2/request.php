@@ -77,8 +77,8 @@ class Request
 				$url .= $key."=".$param."&";
 
 			}
-		Substring($url, 0, -1);
-		return $url;
+		$request = substr($url, 0, -1);
+		return $request;
 	}
 
 
@@ -89,3 +89,6 @@ class Request
 
 
 }
+
+$requestUrl = new Request ('post', 'http', 'mywebsite.com', 'recursoX', array('p1'=>cdr,'p2'=>2r4ws, 'p3'=>8Yj3));
+echo $requestUrl->toStringUrl();
